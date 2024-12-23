@@ -20,7 +20,7 @@ body {
   display: flex;
   box-shadow: rgba(81, 53, 240, 0.15) 0px 48px 100px 0px;
 }
-.ResultContainer {
+.mainContainer .ResultContainer {
   width: 368px;
   height: 512px;
   background: linear-gradient(
@@ -40,8 +40,9 @@ body {
   color: #cac9ff;
   margin-bottom: 35px;
   font-size: 24px;
+  font-weight: bold;
 }
-.Evaluation {
+.mainContainer .ResultContainer .Evaluation {
   width: 200px;
   height: 200px;
   border-radius: 100%;
@@ -53,29 +54,29 @@ body {
   display: flex;
   flex-direction: column;
 }
-.Evaluation h2 {
+.ResultContainer .Evaluation h2 {
   font-size: 72px;
   color: white;
   margin: 50px 60px 0px 60px;
 }
-.Evaluation p {
+.ResultContainer .Evaluation p {
   color: #cac9ff;
   font-size: 18px;
   margin: 0px 75px 46px 73px;
 }
-.Resultat {
+.ResultContainer .Resultat {
   display: flex;
   flex-direction: column;
   width: 260px;
   height: 134px;
   text-align: center;
 }
-.Resultat h2 {
+.ResultContainer .Resultat h2 {
   color: white;
   margin: 28px 0px 14px 0px;
   font-size: 32px;
 }
-.Resultat p {
+.ResultContainer .Resultat p {
   color: #cac9ff;
   font-size: 18px;
 }
@@ -97,78 +98,92 @@ ul li {
   height: 56px;
   list-style: none;
   display: flex;
+  align-items: center;
+  padding: 0px 16px;
+  justify-content: space-between;
 }
 .rate {
   color: #303b59;
   display: flex;
   font-size: 18px;
-  margin: 17px 0px 0px 0px;
 }
 ul span {
   color: #303b5950;
   display: flex;
 }
 ul img {
-  margin: 20px 16px 20px 20px;
+  margin-right: 12px;
 }
-ul p {
-  margin: 17px 81px 16px 0px;
-}
-.reaction {
+.summaryContainer .reaction {
   background-color: #ff555510;
   color: #ff5555;
   font-size: 18px;
   border-radius: 12px;
   cursor: pointer;
 }
-.reaction:hover {
+.summaryContainer .reaction:hover {
   border: 1px solid red;
   background-color: #ff555530;
   scale: 1.1;
+  transition: 500ms;
 }
-.Memory {
+.summaryContainer .reaction div {
+  display: flex;
+}
+.summaryContainer .Memory {
   background-color: #ffb21e10;
   color: #ffb21e;
   font-size: 18px;
   border-radius: 12px;
   cursor: pointer;
 }
-.Memory:hover {
+.summaryContainer .Memory:hover {
   border: 1px solid #ffb21e;
   background-color: #ffb21e30;
   scale: 1.1;
+  transition: 500ms;
 }
-.Verbal {
+.summaryContainer .Memory div {
+  display: flex;
+}
+.summaryContainer .Verbal {
   background-color: #00bb8f10;
   color: #00bb8f;
   font-size: 18px;
   border-radius: 12px;
   cursor: pointer;
 }
-.Verbal .rate {
+.summaryContainer .Verbal .rate {
   margin-left: 15px;
 }
-.Visual:hover {
+.summaryContainer .Visual:hover {
   border: 1px solid #1125d6;
   background-color: #1125d630;
   scale: 1.1;
+  transition: 500ms;
 }
-
-.Visual {
+.summaryContainer .Verbal div {
+  display: flex;
+}
+.summaryContainer .Visual {
   color: #1125d6;
   background-color: #1125d610;
   font-size: 18px;
   border-radius: 12px;
   cursor: pointer;
 }
-.Visual .rate {
+.summaryContainer .Visual .rate {
   margin-left: 21px;
 }
+.summaryContainer .Visual div {
+  display: flex;
+}
 
-.Verbal:hover {
+.summaryContainer .Verbal:hover {
   border: 1px solid #00bb8f;
   background-color: #00bb8f30;
   scale: 1.1;
+  transition: 500ms;
 }
 
 .buttonContainer {
@@ -192,4 +207,5 @@ button {
 }
 button:hover {
   scale: 1.05;
+  transition: 500ms;
 }
