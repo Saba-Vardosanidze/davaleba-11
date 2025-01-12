@@ -124,7 +124,6 @@ ul img {
 .summaryContainer .reaction:hover {
   border: 1px solid red;
   background-color: #ff555530;
-  scale: 1.1;
   transition: 500ms;
 }
 .summaryContainer .reaction div {
@@ -140,7 +139,6 @@ ul img {
 .summaryContainer .Memory:hover {
   border: 1px solid #ffb21e;
   background-color: #ffb21e30;
-  scale: 1.1;
   transition: 500ms;
 }
 .summaryContainer .Memory div {
@@ -159,7 +157,6 @@ ul img {
 .summaryContainer .Visual:hover {
   border: 1px solid #1125d6;
   background-color: #1125d630;
-  scale: 1.1;
   transition: 500ms;
 }
 .summaryContainer .Verbal div {
@@ -182,7 +179,6 @@ ul img {
 .summaryContainer .Verbal:hover {
   border: 1px solid #00bb8f;
   background-color: #00bb8f30;
-  scale: 1.1;
   transition: 500ms;
 }
 
